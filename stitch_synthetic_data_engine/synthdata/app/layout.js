@@ -1,15 +1,10 @@
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL("https://synth-data.vercel.app"),
-
-  title: {
-    default: "SynthData — Privacy First Synthetic Data Generator",
-    template: "%s | SynthData",
-  },
+  title: "SynthData — Privacy First Synthetic Data Generator",
 
   description:
-    "Generate realistic synthetic datasets instantly with privacy-first CSV and JSON exports directly in your browser. Built for developers, analysts, QA teams, and ML workflows.",
+    "Generate realistic synthetic datasets instantly with privacy-first CSV and JSON exports directly in your browser.",
 
   openGraph: {
     title: "SynthData — Privacy First Synthetic Data Generator",
@@ -23,10 +18,10 @@ export const metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: "https://synth-data.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SynthData Open Graph Image",
+        alt: "SynthData",
       },
     ],
 
@@ -38,11 +33,19 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "SynthData — Privacy First Synthetic Data Generator",
+    title: "SynthData",
 
     description:
-      "Generate realistic synthetic datasets instantly with CSV and JSON export support.",
+      "Privacy-first synthetic dataset generation platform.",
 
-    images: ["/og-image.png"],
+    images: ["https://synth-data.vercel.app/og-image.png"],
   },
 };
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
