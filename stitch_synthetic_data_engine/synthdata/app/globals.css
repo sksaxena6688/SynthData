@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #fdf8f8;
+  --color-on-background: #1c1b1b;
+  --color-surface: #fdf8f8;
+  --color-surface-dim: #ddd9d8;
+  --color-surface-bright: #fdf8f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3f2;
+  --color-surface-container: #f1edec;
+  --color-surface-container-high: #ebe7e6;
+  --color-surface-container-highest: #e5e2e1;
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #444748;
+  --color-inverse-surface: #313030;
+  --color-inverse-on-surface: #f4f0ef;
+  --color-outline: #747878;
+  --color-outline-variant: #c4c7c7;
+  --color-surface-tint: #5f5e5e;
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1c1b1b;
+  --color-on-primary-container: #858383;
+  --color-inverse-primary: #c8c6c5;
+  --color-secondary: #5b605b;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dfe4dd;
+  --color-on-secondary-container: #616661;
+  --color-tertiary: #000000;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #1c1b1a;
+  --color-on-tertiary-container: #868382;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #e5e2e1;
+  --color-primary-fixed-dim: #c8c6c5;
+  --color-on-primary-fixed: #1c1b1b;
+  --color-on-primary-fixed-variant: #474746;
+  --color-secondary-fixed: #dfe4dd;
+  --color-secondary-fixed-dim: #c3c8c2;
+  --color-on-secondary-fixed: #181d19;
+  --color-on-secondary-fixed-variant: #434843;
+  --color-tertiary-fixed: #e6e2df;
+  --color-tertiary-fixed-dim: #cac6c4;
+  --color-on-tertiary-fixed: #1c1b1a;
+  --color-on-tertiary-fixed-variant: #484645;
+  --color-surface-variant: #e5e2e1;
+
+  /* Spacing */
+  --spacing-base: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 64px;
+
+  /* Restoring standard widths so they don't get overridden by spacing-xs/sm/md/lg/xl */
+  --width-3xs: 12rem;
+  --width-2xs: 16rem;
+  --width-xs: 20rem;
+  --width-sm: 24rem;
+  --width-md: 28rem;
+  --width-lg: 32rem;
+  --width-xl: 36rem;
+  --width-2xl: 42rem;
+  --width-3xl: 48rem;
+  --width-4xl: 56rem;
+  --width-5xl: 64rem;
+  --width-6xl: 72rem;
+  --width-7xl: 80rem;
+
+  /* Max Widths */
+  --max-width-3xs: 12rem;
+  --max-width-2xs: 16rem;
+  --max-width-xs: 20rem;
+  --max-width-sm: 24rem;
+  --max-width-md: 28rem;
+  --max-width-lg: 32rem;
+  --max-width-xl: 36rem;
+  --max-width-2xl: 42rem;
+  --max-width-3xl: 48rem;
+  --max-width-4xl: 56rem;
+  --max-width-5xl: 64rem;
+  --max-width-6xl: 72rem;
+  --max-width-7xl: 80rem;
+
+  /* Typography Fonts */
+  --font-display: Geist, sans-serif;
+  --font-headline-lg: Geist, sans-serif;
+  --font-headline-lg-mobile: Geist, sans-serif;
+  --font-headline-md: Geist, sans-serif;
+  --font-body-lg: Geist, sans-serif;
+  --font-body-md: Geist, sans-serif;
+  --font-label-caps: Geist, sans-serif;
+  --font-mono-data: "JetBrains Mono", monospace;
+
+  /* Typography Font Sizes and Line Heights */
+  --text-display: 48px;
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.04em;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--letter-spacing: -0.03em;
+
+  --text-headline-lg-mobile: 24px;
+  --text-headline-lg-mobile--line-height: 1.2;
+  --text-headline-lg-mobile--letter-spacing: -0.02em;
+
+  --text-headline-md: 20px;
+  --text-headline-md--line-height: 1.4;
+  --text-headline-md--letter-spacing: -0.02em;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--letter-spacing: -0.01em;
+
+  --text-body-md: 14px;
+  --text-body-md--line-height: 1.5;
+  --text-body-md--letter-spacing: 0;
+
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 1;
+  --text-label-caps--letter-spacing: 0.05em;
+
+  --text-mono-data: 13px;
+  --text-mono-data--line-height: 1.5;
+  --text-mono-data--letter-spacing: 0;
+  
+  /* Border Radius */
+  --radius-DEFAULT: 0.125rem;
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 9999px;
+}
+
+/* Fallback Typography Helpers for Font Weights & Layout Flow */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.font-headline-lg {
+  font-family: var(--font-headline-lg);
+  font-weight: 600;
+}
+.font-headline-lg-mobile {
+  font-family: var(--font-headline-lg-mobile);
+  font-weight: 600;
+}
+.font-headline-md {
+  font-family: var(--font-headline-md);
+  font-weight: 500;
+}
+.font-body-lg {
+  font-family: var(--font-body-lg);
+  font-weight: 400;
+}
+.font-body-md {
+  font-family: var(--font-body-md);
+  font-weight: 400;
+}
+.font-label-caps {
+  font-family: var(--font-label-caps);
+  font-weight: 600;
+}
+.font-mono-data {
+  font-family: var(--font-mono-data);
+  font-weight: 450;
+}
+
+/* Explicit Utility Overrides for Typography Font Sizes & Cases */
+.text-display {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+.text-headline-lg {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+.text-headline-lg-mobile {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.text-headline-md {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+.text-body-lg {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+.text-body-md {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.text-label-caps {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.text-mono-data {
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 450;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for data density look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-e5e2e1);
+  background-color: #e5e2e1;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c4c7c7;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1edec;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c4c7c7;
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #747878;
+}
+
+.data-grid-dots {
+  background-image: radial-gradient(#c4c7c7 1px, transparent 1px);
+  background-size: 24px 24px;
+}

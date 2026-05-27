@@ -1,0 +1,10 @@
+{
+  "name": "synthetic-data-generation-parent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix stitch_synthetic_data_engine/synthdata",
+    "build": "npm run build --prefix stitch_synthetic_data_engine/synthdata",
+    "start": "npm run start --prefix stitch_synthetic_data_engine/synthdata"
+  }
+}
