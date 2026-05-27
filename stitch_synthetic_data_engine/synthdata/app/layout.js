@@ -4,7 +4,8 @@ export const metadata = {
   title: "SynthData — Privacy First Synthetic Data Generator",
 
   description:
-    "Generate realistic synthetic datasets instantly with privacy-first CSV and JSON exports directly in your browser.",
+    "description:
+  "Generate realistic synthetic datasets instantly with privacy-first CSV and JSON exports directly in your browser. Built for developers, QA teams, analytics workflows, and machine learning pipelines.",
 
   openGraph: {
     title: "SynthData — Privacy First Synthetic Data Generator",
